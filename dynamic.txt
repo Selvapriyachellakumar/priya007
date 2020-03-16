@@ -1,0 +1,39 @@
+class Rectangle
+{
+	int l=8,b=4;
+	int area;
+	public void area()
+	{
+		area=l*b;
+		System.out.println("Area of rectangle: "+area);
+	}
+}
+class Square extends Rectangle
+{
+	public void area()   
+	{
+		area=l*l;
+		System.out.println("Area of square: "+area);
+	}
+}
+class Triangle extends Rectangle
+{
+ 
+	public void area()     
+	{
+		area=(b*l)/2;
+		System.out.println("Area of triangle: "+area);
+	}
+}
+public class Main
+{
+	public static void main(String args[])
+	{
+		Rectangle r=new Rectangle();
+		r.area();
+		r=new Square();       
+		r.area();
+		r=new Triangle();    
+		                     
+	}
+}
